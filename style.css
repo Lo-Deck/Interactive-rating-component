@@ -1,0 +1,199 @@
+:root{
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--veryDarkBlue);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+/*INDEX1*/
+
+.main-container{
+    background-color: var(--darkBlue);
+    max-width: 21rem;
+    padding: 1.5rem 1.375rem 2rem;
+    border-radius: 1rem;
+}
+
+.display-circle{
+    background-color: #374552;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.main-image{
+    display: block;
+    width: 1rem;
+    position: absolute;
+        top: 0.825rem; left: 0.825rem;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff; 
+    margin: 1.5rem 0;
+}
+
+.main-text{
+    font-size: 0.875rem;
+    color: var(--mediumGrey);
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+.rating-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{    
+    appearance: none;
+    position: absolute; 
+}
+
+input:focus{
+    outline: none;
+}
+
+label{  
+    background-color: #374552;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;   
+    color: var(--lightGrey);
+    position: relative;
+}
+
+input[type="radio"]:checked + label{
+    background-color: var(--lightGrey);
+    color: #fff;
+}
+
+label:hover{
+    cursor: pointer;
+    background-color: var(--orange);  
+    color: #fff;
+}
+
+label span{
+    position: absolute;
+        top: calc(50% - 0.5rem) ; left: calc(50% - 0.3rem);
+}
+
+.rating-display label:nth-of-type(1) span{
+    position: absolute;
+        top: calc(50% - 0.5rem) ; left: calc(50% - 0.2rem);
+}
+
+.button{
+    display: block;
+    border-style: none;
+    width: 100%;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.8;
+    letter-spacing: 0.12rem;
+    background-color: var(--orange);
+    color: #fff;
+    margin: 1.5rem auto 0;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+
+/*INDEX2*/
+
+.thank-container{
+    text-align: center;
+}
+
+.thank-image{
+    width: 9rem;
+}
+
+.result-text{
+    background-color:#374552;
+    color: var(--orange);
+    width: 10.5rem;
+    margin: 1.25rem auto 0;
+    font-size: 0.825rem;
+    line-height: 2.2;
+    border-radius: 1rem;
+}
+
+
+@media screen and (min-width: 768px)
+{
+    
+    .main-container{
+        max-width: 100%;
+        width: 25.75rem;
+    }
+
+    .display-circle{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .main-image{
+        position: absolute;
+        top: 1rem; left: 1rem;
+    }
+
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .main-text{
+        font-size: 1rem;
+    }
+
+    label{  
+        width: 3.1875rem;
+        height: 3.1875rem;
+    }
+
+    .button{
+        font-size: 1.2rem;
+    }
+
+    .thank-image{
+        width: 10.125rem;
+    }
+    
+    .result-text{
+        font-size: 1rem;
+        width: 12rem;
+    }
+
+}
+
+

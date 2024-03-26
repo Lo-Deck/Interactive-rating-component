@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Frontend Mentor | Interactive rating component">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+    <body>
+
+      <main class="main-container">
+
+        <div class="display-circle">
+          <img class="main-image" src="./images/icon-star.svg" alt="">
+        </div>
+
+        <h1 class="title">How did we do?</h1>
+
+        <p class="main-text">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+
+        <form class="myForm" id="form1" name="MyRate" method="get" action="./index2.html">  <!--action  target="_blank" voir pour adresse-->
+
+          <div class="rating-display">
+
+            <input class="number" id="one" name="rating" type="radio" value="1">
+            <label for="one" tabindex="1"><span>1</span></label>
+
+            <input class="number" id="two" name="rating" type="radio" value="2">
+            <label for="two" tabindex="2"><span>2</span></label>
+
+            <input class="number" id="three" name="rating" type="radio" value="3">
+            <label for="three" tabindex="3"><span>3</span></label>
+
+            <input class="number" id="four" name="rating" type="radio" value="4">
+            <label for="four" tabindex="4"><span>4</span></label>
+
+            <input class="number" id="five" name="rating" type="radio" value="5">
+            <label for="five" tabindex="5"><span>5</span></label>
+
+          </div>
+
+          <button class="button" type="submit" form="form1" value="submit">submit</button>
+
+        </form>
+
+      </main>
+
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html>
